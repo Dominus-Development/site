@@ -1,0 +1,40 @@
+defaults: &defaults
+  sessions:
+    default:
+      database: locomotive
+      hosts:
+        - localhost:27017
+
+development:
+  <<: *defaults
+  sessions:
+    default:
+      database: locomotive_dev
+      hosts:
+        - localhost:27017
+
+test:
+  <<: *defaults
+  sessions:
+    default:
+      database: locomotive_dev
+      hosts:
+        - localhost:27017
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  sessions:
+    default:
+      database: locomotive_dev
+      hosts:
+        - <%= ENV['MONGOID_HOST'] %>:<%= ENV['MONGOID_PORT'] %>
+      username: <%= ENV['MONGOID_USERNAME'] %>
+      password: <%= ENV['MONGOID_PASSWORD'] %>
+      database: <%= ENV['MONGOID_DATABASE'] %>
+
+  # heroku
+  # uri: <%= ENV['MONGOHQ_URL'] %>
+
+  # bushido (mongohq_url will also work)
+  # uri: <%= ENV['MONGODB_URL'] %>
