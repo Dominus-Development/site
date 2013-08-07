@@ -1,5 +1,8 @@
 DominateGaming::Application.routes.draw do
   
+  resources :users
+
+
   mount Locomotive::Engine => '/locomotive', as: 'locomotive' # you can change the value of the path, by default set to "/locomotive"
       
 
