@@ -259,6 +259,7 @@ DEPENDENCIES
   coffee-rails
   compass-rails
   locomotive_cms (~> 2.1.0)
+  mongoid
   rails (= 3.2.13)
   sass-rails
   therubyracer
