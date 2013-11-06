@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'locomotive_cms', '~> 2.1.0', :require => 'locomotive/engine'
+gem 'mongoid'
 
 # Gems used only for assets and not required
 # in production environments by default.
