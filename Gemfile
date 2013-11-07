@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'locomotive_cms', '~> 2.2.3', :require => 'locomotive/engine'
+gem 'locomotive_cms', '2.2.2', :require => 'locomotive/engine'
 gem 'mongoid'
 
 # Gems used only for assets and not required
